@@ -1,0 +1,223 @@
+* { border:0px; margin:0px; padding:0px; outline:0px; }
+html { background:url(http://static.tumblr.com/ryxwk4s/anol9nhmh/bg.jpg) top center fixed repeat-x #000; overflow-y:scroll; } /* always show scrollbar in non-IE */
+body { font-size:16px; line-height:24px; width:940px; margin:15px auto; color:#fff; font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+img { -ms-interpolation-mode:bicubic; }
+strong { font-weight:bold; }
+em { font-style:italic; }
+hr { display:block; height:1px; border-top:1px solid #303030; margin:25px auto;}
+ol { list-style-type:decimal; }
+p { margin:12px 0px; }
+p:first-child { margin-top:0px; }
+p:last-child { margin-bottom:0px; }
+pre { white-space:pre; white-space:pre-wrap; white-space:pre-line; word-wrap:break-word; }
+blockquote { padding-left:10px; border-left:1px solid #999; }
+
+h1.title { font-size:72px; line-height:82px; padding:0px 12px 12px 12px; }
+h2 { font-size:24px; margin-top:15px; font-weight:normal; text-shadow:0px 0px 5px rgba(0,0,0,0.85); -webkit-text-shadow:0px 0px 5px rgba(0,0,0,0.85); -moz-text-shadow:0px 0px 5px rgba(0,0,0,0.85); }
+h3 { font-size:18px; line-height:30px; margin-bottom:5px; }
+h4 { font-size:24px; }
+.post-main h3.title { font-size:24px; line-height:30px; margin-bottom:5px; }
+.post-main h1 { font-size:24px; line-height:30px; margin-bottom:5px; }
+.post-main h2 { font-size:22px; line-height:28px; font-weight:bold; }
+.post-main h3 { font-size:20px; line-height:26px; }
+.post-main h4 { font-size:18px; line-height:24px; }
+
+a { -webkit-tap-highlight-color:#FF5E99; color:#fff; text-decoration:none; font-weight:bold; }
+.post-main p a, .post-main span a, .post-main h1 a, .post-main h2 a, .post-main h3 a, .post-main h4 a, .post-main h5 a, .post-main h6 a, .post-main .caption a, .like_caption a, .like_post p a, .post_info_bottom a { padding:2px; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; -o-transition-duration:.2s; -o-transition-property:background; -webkit-transition-duration:.2s; -webkit-transition-property:background; -moz-transition-duration:.2s; -moz-transition-property:background; transition-duration:.2s; transition-property:background; border-bottom:1px solid #999; }
+.like_post p a, .post_info_bottom a, .post-main h3 a { border-bottom:none; }
+.post-main a:hover, .like_caption a:hover, .like_post p a:hover, .post_info_bottom a:hover { -o-transition-duration:.2s; -o-transition-property:background; -webkit-transition-duration:.2s; -webkit-transition-property:background; -moz-transition-duration:.2s; -moz-transition-property:background; transition-duration:.2s; transition-property:background; border-bottom:none; }
+
+::-moz-selection{ background:#FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+input, select { vertical-align:middle; }
+label, input[type="button"], input[type="submit"], button { cursor:pointer; }
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
+button { width:auto; overflow:visible; } /* IE */
+
+/* Clearfix */
+.group:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+* html .group { height:1%; }  /* IE6 */
+*:first-child+html .group { min-height:1px; } /* IE7 */
+
+.ds { box-shadow:-1px 1px 1px rgba(0,0,0,0.4); -webkit-box-shadow:-1px 1px 1px rgba(0,0,0,0.4); -moz-box-shadow:-1px 1px 1px rgba(0,0,0,0.4); }
+
+#left { float:left; width:620px; }
+#posts { list-style:none; }
+.post { margin-top:50px; }
+.post-main { float:right; width:520px; background:#303030; padding:10px; }
+.post-main ul { list-style:disc; }
+.post-main ul, .post-main ol { margin-left:20px; }
+
+.post-tags { float:right; width:510px; margin-top:25px; padding-left:30px; background:url(http://static.tumblr.com/ryxwk4s/L2Ml9nhv5/icon-tags.png) 5px 4px no-repeat; line-height:25px; list-style:none; font-size:14px; position:relative; }
+.post-tags a { font-weight:normal; font-family:"Helvetica Neue Medium", "HelveticaNeue-Medium", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+.post-tags li { display:inline; margin-right:15px; }
+.tags-arrow { font-size:47px; width:17px; height:21px; position:absolute; top:0px; margin-top:-2px; left:75px; z-index:-1; text-shadow:-1px -1px 0px rgba(0,0,0,0.4); -webkit-text-shadow:-1px -1px 0px rgba(0,0,0,0.4); -moz-text-shadow:-1px -1px 0px rgba(0,0,0,0.4);
+     -moz-transform: rotate(-90deg);  
+       -o-transform: rotate(-90deg);  
+  -webkit-transform: rotate(-90deg);  
+             filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',  
+                      M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17); 
+         -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(
+                      M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17, 
+                      sizingMethod='auto expand')"; 
+               zoom: 1;
+}
+.rotright {
+     -moz-transform: rotate(-75deg);  
+       -o-transform: rotate(-75deg);  
+  -webkit-transform: rotate(-75deg);  
+             filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',  
+                      M11=0.25881904510252074, M12=0.9659258262890683, M21=-0.9659258262890683, M22=0.25881904510252074); 
+         -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(
+                      M11=0.25881904510252074, M12=0.9659258262890683, M21=-0.9659258262890683, M22=0.25881904510252074, 
+                      sizingMethod='auto expand')"; 
+               zoom: 1;
+}
+.rotleft {
+     -moz-transform: rotate(-105deg);  
+       -o-transform: rotate(-105deg);  
+  -webkit-transform: rotate(-105deg);  
+             filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',  
+                      M11=-0.25881904510252085, M12=0.9659258262890683, M21=-0.9659258262890683, M22=-0.25881904510252085); 
+         -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(
+                      M11=-0.25881904510252085, M12=0.9659258262890683, M21=-0.9659258262890683, M22=-0.25881904510252085, 
+                      sizingMethod='auto expand')"; 
+               zoom: 1;
+}
+
+
+
+.post-side { float:left; width:60px; font-size:12px; list-style:none; text-align:right; }
+.post-side a { font-weight:normal; display:block; width:100%; height:100%; }
+.post-side li { margin-bottom:3px; }
+.post-side .notes { background:url(http://static.tumblr.com/ryxwk4s/01vl9nhs1/icon-notes.png) no-repeat left; }
+.post-side .permalink { background:url(http://static.tumblr.com/ryxwk4s/2Njl9nhsi/icon-permalink.png) no-repeat left; }
+.post-side .source { background:url(http://static.tumblr.com/ryxwk4s/20Tl9nhuv/icon-source.png) no-repeat left; }
+.post-side .plays { background:url(http://static.tumblr.com/ryxwk4s/OTml9nhtg/icon-plays.png) no-repeat left; }
+.post-side .author img { float:left; border-radius:12px; -webkit-border-radius:12px; -moz-border-radius:12px; background:#fff; width:16px; height:16px; margin-left:1px; margin-top:3px; }
+
+.post-side.text { padding-top:46px; background:url(http://static.tumblr.com/ryxwk4s/VoKl9nhvm/icon-text.png) no-repeat top; }
+.post-side.photo { padding-top:51px; background:url(http://static.tumblr.com/ryxwk4s/y7Wl9nhss/icon-photo.png) no-repeat top; }
+.post-side.video { padding-top:72px; background:url(http://static.tumblr.com/ryxwk4s/08rl9nhvz/icon-video.png) no-repeat top; }
+.post-side.photoset { padding-top:56px; background:url(http://static.tumblr.com/ryxwk4s/IWfl9nht4/icon-photoset.png) no-repeat top; }
+.post-side.chat { padding-top:56px; background:url(http://static.tumblr.com/ryxwk4s/BMnl9nhqf/icon-chat.png) no-repeat top; }
+.post-side.quote { padding-top:61px; background:url(http://static.tumblr.com/ryxwk4s/fBhl9nhu7/icon-quote.png) no-repeat top; }
+.post-side.answer { padding-top:61px; background:url(http://static.tumblr.com/ryxwk4s/Jufl9nhpq/icon-answer.png) no-repeat top; }
+.post-side.link { padding-top:58px; background:url(http://static.tumblr.com/ryxwk4s/NVXl9nhqr/icon-link.png) no-repeat top; }
+.post-side.audio { padding-top:55px; background:url(http://static.tumblr.com/ryxwk4s/UXQl9nhq2/icon-audio.png) no-repeat top; }
+
+
+/* Post Content */
+.caption { display:inline; }
+.post-main img, .post-main object, .post-main embed { float:left; margin-right:10px; margin-bottom:10px; }
+
+/* Audio Posts */
+.audio embed { float:none; margin-right:0px; margin-bottom:0px; }
+.audiometaholder { float:left; margin-right:10px; width:220px; height:220px; position:relative; }
+.albumartoverlay { width:220px; height:220px; background:url(http://static.tumblr.com/ryxwk4s/iMOl9nhkv/bg-albumartoverlay.png) no-repeat; position:absolute; top:0px; left:0px; z-index:2; }
+.albumart { width:220px; height:220px; background:url(http://static.tumblr.com/ryxwk4s/8O8l9nhki/bg-albumart.png) no-repeat; position:absolute; top:0px; left:0px; }
+.albumart img { width:220px; }
+.audiometa { font-weight:bold; width:220px; position:absolute; bottom:0px; }
+.audioplayer { height:27px; }
+.audio_player { float:left; opacity:0.7; line-height:0px; position:relative; z-index:10; }
+.audioplayerfix { width:13px; height:27px; opacity:0.7; background:#000; float:left; position:relative; z-index:10; }
+.trackinfo { background:url(http://static.tumblr.com/ryxwk4s/9gEl9nhld/bg-audiometa.png); width:210px; float:left; padding-left:10px; position:relative; z-index:10; color:#ddd; }
+.trackname { display:block; padding-bottom:4px; line-height:20px; }
+.trackartist { display:block; font-size:14px; line-height:18px; padding-bottom:4px; }
+
+/* Quote Posts */
+.quotecontent { background:#202020; font-size:14px; line-height:22px; padding:5px 10px; position:relative; margin-bottom:10px; font-style:italic; }
+.quotecontent .arrow { left:0px; bottom:0px; margin-bottom:-7px; border-color:#202020 transparent transparent #202020; border-width:4px; border-style:solid; position:absolute; width:0px; height:0px; }
+
+
+/* Chat Posts */
+ul.chatcontents { list-style:none; margin-left:0px; }
+ul.chatcontents li { position:relative; margin-top:15px; font-size:14px; line-height:22px; }
+ul.chatcontents li:first-child { margin-top:0px; }
+ul.chatcontents .linelabel { font-weight:bold; font-size:12px; position:absolute; bottom:0px; line-height:14px; margin-bottom:-4px; }
+ul.chatcontents .linecontents { background:#202020; padding:5px 10px; position:relative; width:400px; }
+ul.chatcontents .arrow { border-style:solid; border-width:4px; position:absolute; bottom:0px; width:0px; height:0px; }
+ul.chatcontents .user_1 .linelabel { left:0px; }
+ul.chatcontents .user_2 .linelabel, ul.chatcontents .user_3 .linelabel, ul.chatcontents .user_4 .linelabel, ul.chatcontents .user_5 .linelabel, ul.chatcontents .user_6 .linelabel, ul.chatcontents .user_7 .linelabel, ul.chatcontents .user_8 .linelabel, ul.chatcontents .user_9 .linelabel, ul.chatcontents .user_10 .linelabel { right:0px; }
+ul.chatcontents .user_1 .linecontents { float:right; }
+ul.chatcontents .user_2 .linecontents, ul.chatcontents .user_3 .linecontents, ul.chatcontents .user_4 .linecontents, ul.chatcontents .user_5 .linecontents, ul.chatcontents .user_6 .linecontents, ul.chatcontents .user_7 .linecontents, ul.chatcontents .user_8 .linecontents, ul.chatcontents .user_9 .linecontents, ul.chatcontents .user_10 .linecontents { float:left; }
+ul.chatcontents .user_1 .arrow { left:0px; margin-left:-7px; border-color:transparent #202020 #202020 transparent; }
+ul.chatcontents .user_2 .arrow, ul.chatcontents .user_3 .arrow, ul.chatcontents .user_4 .arrow, ul.chatcontents .user_5 .arrow, ul.chatcontents .user_6 .arrow, ul.chatcontents .user_7 .arrow, ul.chatcontents .user_8 .arrow, ul.chatcontents .user_9 .arrow, ul.chatcontents .user_10 .arrow { right:0px; margin-right:-7px; border-color:transparent transparent #202020 #202020; }
+
+
+/* Answer Posts */
+.answer .question { background:#202020; font-size:14px; line-height:22px; padding:5px 10px; position:relative; }
+.answer .question .arrow { left:0px; bottom:0px; margin-bottom:-7px; border-color:#202020 transparent transparent #202020; border-width:4px; border-style:solid; position:absolute; width:0px; height:0px; }
+.answer .askedby { font-size:12px; font-weight:bold; line-height:14px; margin-bottom:10px; }
+
+
+/* Notes */
+#postnotesurl { display:none; }
+
+ol.notes {  }
+
+#notes { background:#303030; display:none; padding:10px; width:520px; margin:25px 0px 50px; float:right; position:relative; font-size:14px; }
+#notes p.message { margin-top:0px; margin-bottom:5px; }
+#notes img { vertical-align:bottom; margin:0px 4px 4px 0px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; }
+#notes ul { list-style:none; }
+#notes div:first-child { margin-top:0px !important; }
+#notes h5 { font-size:18px; line-height:20px; font-weight:normal; border-bottom:1px solid #fff; margin-bottom:10px; }
+#notes blockquote { padding-left:0px; border-left:none; }
+#notes .action { font-size:12px; margin:0px; }
+#notes .action:after { content:":"; }
+
+#notes-replies li { margin-top:20px; }
+#notes-replies li:first-child { margin-top:10px; }
+#notes-replies li:last-child { margin-bottom:25px; }
+#notes-replies img { float:left; width:60px; height:60px; margin:0px 10px 0px 0px; }
+#notes-replies img.photo-reply { max-width:450px; width:auto; height:auto; margin:0px; border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px; }
+#notes-replies .tumblelog { display:block; }
+#notes-replies .tumblelog:after { content:":"; }
+
+#reblogswithcommentary blockquote a { font-weight:normal; }
+#reblogswithcommentary img { float:left; margin:0px 10px 0px 0px; width:60px; height:60px; background:#fff; }
+#reblogswithcommentary li { margin-top:20px; }
+#reblogswithcommentary li:first-child { margin-top:0px; }
+
+#reblogswithoutcommentary img { float:left; width:30px; height:30px; margin:0px 4px 4px 0px; background:#fff; }
+
+#notes-likes img { float:left; background:#fff; width:30px; height:30px; }
+
+#notes .notes-more { margin-top:25px; text-align:center; }
+
+
+/* Pagination */
+#pagination { margin:50px 0px; width:620px; position:relative; text-align:center; }
+#pagination a { font-weight:normal; }
+#pages { font-size:24px; display:block; position:absolute; margin:20px 0px; left:0px; width:100%; z-index:-1; }
+#pages em { font-family:"Brush Script MT", "Segoe Script", serif; font-size:18px; display:inline-block; vertical-align:top; }
+#prevpage { min-width:60px; position:relative; display:block; background:url(http://static.tumblr.com/ryxwk4s/dHGl9nhtt/icon-prevpage.png) no-repeat top left; padding-top:44px; float:left; }
+#nextpage { min-width:60px; position:relative; display:block; background:url(http://static.tumblr.com/ryxwk4s/h08l9nhrj/icon-nextpage.png) no-repeat top right; padding-top:44px; float:right; }
+
+/* Sidebar */
+#right { float:right; width:300px; }
+#right h4 { margin-top:25px; padding:5px; margin-bottom:10px; }
+#right div h4 { margin-bottom:15px; }
+#aboutportrait { float:left; margin:3px 5px 2px 0px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; }
+
+#right ul, #right ol { margin-left:20px; }
+#right li a { font-weight:normal; }
+
+#following img { vertical-align:bottom; background:#fff; }
+#following a { margin-right:6px; margin-bottom:6px; display:block; float:left; }
+
+#search { width:262px; background:url(http://static.tumblr.com/ryxwk4s/yGRl9nhui/icon-search.png) no-repeat 7px center #fff; font-size:16px; padding:2px 8px 2px 26px; border:1px solid #555; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px; background-clip:padding-box; -webkit-background-clip:padding-box; -moz-background-clip:padding-box; }
+#search::-webkit-input-placeholder { color:#777; }
+#search:-moz-placeholder { color:#777; }
+
+/* Liked Posts */
+ul#likes { list-style:none; width:320px; font-size:12px; line-height:18px; margin-left:0px; }
+#likes p { margin:3px 0px; }
+#likes .like_title { font-weight:bold; }
+#likes blockquote { padding-left:5px; }
+#likes li { background:#303030; width:130px; padding:5px; float:left; margin-bottom:20px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; }
+#likes img { max-width:130px; vertical-align:bottom; }
+#likes .post_info_bottom { display:block !important; font-size:10px; text-align:center; line-height:12px; margin-top:10px; margin-bottom:5px; }
+#morelikedposts { margin:0 auto; display:block; width:150px; height:24px; font-size:14px; text-align:center; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px; }
